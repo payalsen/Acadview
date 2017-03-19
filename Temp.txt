@@ -1,1 +1,124 @@
 Payal Sen
+
+Akash@Payal MINGW64 ~
+$ dir
+AppData
+Application\ Data
+Contacts
+Cookies
+Desktop
+Documents
+Downloads
+dwhelper
+Favorites
+IntelGraphicsProfiles
+Links
+Local\ Settings
+Music
+My\ Documents
+NetHood
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{fdcd1f65-ae7e-11e3-80bf-b8ca3aee0e44}.TM.blf
+NTUSER.DAT{fdcd1f65-ae7e-11e3-80bf-b8ca3aee0e44}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{fdcd1f65-ae7e-11e3-80bf-b8ca3aee0e44}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+Pictures
+PrintHood
+Recent
+Saved\ Games
+Searches
+SendTo
+Start\ Menu
+Templates
+Videos
+
+Akash@Payal MINGW64 ~
+$ Desktop
+bash: Desktop: command not found
+
+Akash@Payal MINGW64 ~
+$ cd desktop
+
+Akash@Payal MINGW64 ~/desktop
+$ cd Acadview
+
+Akash@Payal MINGW64 ~/desktop/Acadview
+$ git init
+Initialized empty Git repository in C:/Users/Akash/Desktop/Acadview/.git/
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git add temp
+fatal: pathspec 'temp' did not match any files
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git add Temp
+fatal: pathspec 'Temp' did not match any files
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git config list
+error: key does not contain a section: list
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.required=true
+credential.helper=manager
+user.name=payalsen
+user.email=abhirox889@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git add 'Temp.txt'
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git commit -m 'try to git'
+[master (root-commit) f640d13] try to git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Temp.txt
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git remote add origin https://github.com/payalsen/Acadview.git
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 209 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/payalsen/Acadview.git
+ * [new branch]      master -> master
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git add 'Temp.txt'
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git commit -m 'update'
+[master 37539a5] update
+ 1 file changed, 1 insertion(+)
+
+Akash@Payal MINGW64 ~/desktop/Acadview (master)
+$ git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 245 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/payalsen/Acadview.git
+   f640d13..37539a5  master -> master
+$ git pull origin master
