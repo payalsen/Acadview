@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+<link href="/normalize.css" rel="stylesheet">
+<style>
+
+header {
+     text-align: center;
+     color: white;
+  }
+  a{
+    color: white;
+  }
+  ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://blog.souqmobi.com/wp-content/uploads/2014/04/Men-Clothing-Dubai.jpg");
+}
+.second{
+  background-image: url("http://img.wikinut.com/img/3b9mjcujfriqo7gg/jpeg/0/women-clothing.jpeg");
+}
+.dessert{
+  background-image: url("http://4.bp.blogspot.com/-R4uuETJmAc0/UoswCt4cCDI/AAAAAAAAAGY/IntQ998wBpk/s1600/Zara1.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Yash Production</h1>
+<h2>Mens Wear , Ladies Wear , Kids Wear</h2>
+<header>
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Mens Wear</a></li>
+      <li><a href="#">Ladies Wear</a></li>
+      <li><a href="#">Kids Wear</a></li>
+    </ul></header>
+    <article>
+<div class="first">
+  <p>Mens Wear<span class="price">$50</span><br />
+  <small>Discover men’s clothing including T-shirts, shirts, polos, dressing suits, jeans and more at Indiatimes Shopping. You can shop for the latest designs and trendiest look at our men fashion store. Choose from a huge variety and a wide range of apparel and accessories to take care of your fashion needs. </small></p>
+</div></br><button>Like</button></article>
+<article>
+<div class="second">
+  <p>Ladies Wear<span class="price">$45</span><br />
+  <small>The wide range of clothing for women is categorized as per the occasion, body size, season, trend and utility.Choose from a variety of clothing for women online in India at best rates.</small></p>
+</div></br><button>Like</button></article>
+<article>
+<div class="dessert">
+  <p>Kids Wear<span class="price">$70</span><br />
+  <small>Buying kids wear is not just a colourful activity, but tricky as well. Children outgrow their clothes fast, and it is essential that you get the right fit for your child.
+</small></p>
+
+</div></br><button>Like</button></article>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+<script>$("button").on("click", function() {
+   alert("clicked!")});
+   });</script>
+
+</body>
